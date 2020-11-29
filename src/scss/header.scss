@@ -1,1 +1,333 @@
-.header {}
+.header {   
+    
+            background-color:$color-white;
+            position: absolute;
+            max-width: 100%;
+            width: 100%;
+            z-index: 1;
+            position: fixed;
+            line-height: 30px;
+            font-family: Orbitron;
+            top: 0;
+            left: 0; 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            letter-spacing: 0.06em;
+
+                @include tablet{
+                    line-height: 100px;
+                    max-height: 100px;
+                    height: 100%;
+                    
+                }
+                
+             a{
+                    
+                text-decoration: none;
+                color:$color-black;
+                    @include tablet{
+                        padding-left: 0px; 
+                    }
+                    @include desktop{
+                        padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 5px;
+                            padding-right: 5px; 
+                    }
+                &:hover{
+                    color:$color-orange;
+                    @include tablet{
+                        background-color:transparent;
+                    }
+                }
+            }
+
+            .logo{
+                display:flex ;
+            align-items:center;
+            font-family: Orbitron;
+            text-transform: uppercase;
+            font-size: 13px;
+            margin-left: 23px;
+            letter-spacing: 0px;
+                @include desktop{
+                    letter-spacing: 0.06em;
+                    font-size: 28px;
+                    
+                }
+                @include desktop-extra{
+                    font-size: 30px;
+                    margin-left: 40px;
+                }
+
+                img{width:21px;
+                    height:17px;
+                    margin-right: 4px;
+                    
+                    @include desktop{
+                        width:70px;
+                        height:70px;
+                    }
+                    @include desktop-extra{
+                        width:86px;
+                        height: 68px;
+                        margin-right: 17px;
+                    }
+                }
+                h5{
+                    @include tablet{
+                        font-size: 17px;
+                    }
+                    @include desktop{
+                        font-size: 20px;
+                    }
+                    @include desktop-extra{
+                    font-size: 30px;
+                    margin-right: 0px; 
+                }
+                }
+            }
+            
+            nav{
+                display: flex;
+                justify-content: flex-end;
+                order:2;
+                margin-right: 23px;
+                
+                @include tablet{
+                    order: unset;
+                    max-width: 63%;
+                    width: 100%;
+                    letter-spacing: 0;
+                    margin-right: 18px;
+                    margin-left: auto;
+                }
+                @include desktop-extra{
+                    max-width: 57%;
+                    margin-right: 0px;
+                }
+            }
+
+            .header__navbar{
+                display: none;
+                flex-direction: column;
+                text-transform: uppercase;
+                list-style-type: none;
+                font-size: 12px;
+                position: absolute;
+                top:0px;
+                right: 0px;
+                z-index: 1;
+                text-align: left;
+                
+                    @include tablet{
+                        position: unset;
+                        display: flex;
+                        flex-direction: row;
+                        text-transform: uppercase;
+                        list-style-type: none;
+                        text-align: center;
+                        font-family:Orbitron ;
+                        font-size:13px;
+                        justify-content: space-between;
+                        max-width: 100%;
+                        width: 100%;
+                        background-color: transparent;
+                    
+                    }
+                    @include desktop{
+                        max-width: 82%;
+                    }
+                    @include desktop-extra{
+                        font-size:16px;
+                    }
+
+                    li{
+                        background-color:$color-orange;
+                        width: 100vw;
+                        @include tablet{
+                            background-color:transparent; 
+                        }
+
+                        &:hover{
+                          background-color:$color-gray;
+                          @include tablet{
+                            background-color:transparent;
+                          }  
+                        }
+                    }
+
+                    a{
+                        padding-left: 10px;
+                        @include tablet{
+                            padding-left: 0px;
+                        }
+                        @include desktop{
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 5px;
+                            padding-right: 5px;  
+                        }
+                        @include desktop-extra{
+                            text-decoration: none;
+                            color:$color-black;
+                            line-height: 50px;
+                        }
+                        &:hover{
+                           color:$color-orange;
+                        }
+                    }
+
+                    .minilogo{
+                        padding-left: 10px;
+                        font-size: 15px;
+                        color:$color-white;
+
+                        @include tablet{
+                            display: none;  
+                        }
+
+                        &:hover{
+                            background-color:$color-orange;
+
+                        }
+
+                    }
+            }
+
+            .menu-button{
+                top:0px;
+                display: block;
+                position: absolute;
+                z-index: 3;
+                width:30px;
+                height: 30px;
+                cursor: pointer;
+
+                @include tablet{
+                    display: none;
+                }
+            } 
+            
+            .burger-line{
+                position: absolute;
+                width: 25px;
+                height: 3px;
+                z-index: 2 ;
+                top:8px;
+                background-color:$color-orange;
+                transition: .5s all;
+                @include tablet{
+                display:none;
+                }
+            }
+
+            .second, .three{
+                top:14px;
+            }
+        
+            .four{
+                top:20px;
+            }
+
+    
+        
+
+        #checkmenu{
+            opacity: 0;
+        
+            &:checked ~ .first{
+                display: none;
+            }
+
+            &:checked ~ .second{
+                transform: rotate(45deg);
+                background-color:$color-white;
+            }
+            
+            &:checked ~ .three{
+                transform: rotate(-45deg);
+                background-color:$color-white;
+            }
+
+            &:checked ~ .four{
+                display: none;
+            }
+            
+            &:checked ~ .header__navbar{
+                display: flex;
+            }
+        }
+    
+    .dropdown{
+        line-height: 20px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size:9px;
+        position: relative;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: 20px;
+
+        @include tablet{
+            font-size: 14px;
+        }
+        @include desktop{
+            line-height: 60px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include desktop-extra{
+            margin-right: 47px; 
+            margin-left:7px;
+            
+        }
+
+            &:hover .dropdown__list{
+                display: block;
+            }
+                    .dropdown__list{
+                        display: none;
+                        background-color:$color-white;
+                        position: absolute;
+                        border-radius:10px;
+                        z-index: 1;
+                        top:32px;
+                        right: 0;
+                        line-height: 10px;
+                        list-style-type: none;
+
+                        @include tablet{
+                            top:67px;
+                        }
+
+                        @include desktop{
+                            line-height: 15px;
+                            top:92px;
+                        }
+
+
+                         li{
+                            padding-left: 15x;
+                            padding-right: 15x;
+                            padding-top: 15x;
+                            padding-bottom: 15x;
+                            position: relative;
+                            width: 50px;
+                            text-align: right;
+
+                            &:hover{
+                                background-color: $color-white;
+                                border-radius:10px;
+                            }
+                        }
+                    }
+                }     
+}

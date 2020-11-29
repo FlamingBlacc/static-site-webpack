@@ -6,13 +6,14 @@
 @import 'includes/base/global';
 
 // Blocks
-//@import 'includes/blocks/*';
+@import 'includes/blocks/portfolio.scss';
+@import 'includes/blocks/video.scss';
 
 // Vendor
 //@import 'includes/vendor/**/*';
 
 // Templates
-@import 'templates/*';
+@import 'templates/home.scss';
 
 // Core Templates
 @import 'footer.scss';
