@@ -4,7 +4,7 @@
     padding-top: 23px;
     padding-bottom: 20px;
     align-items:center;
-    font-family: Orbitron;
+    font-family: $font-Orbitrone;
     background-color:$color-white;
 
         @include tablet{
@@ -84,7 +84,7 @@
                 }
 
                 & .game{
-                    font-family: Orbitron;
+                    font-family: $font-Orbitrone;
                    
                     margin-top: 5px;
                     margin-left: 10px;

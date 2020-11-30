@@ -7,7 +7,7 @@
             z-index: 1;
             position: fixed;
             line-height: 30px;
-            font-family: Orbitron;
+            font-family: $font-Orbitrone;
             top: 0;
             left: 0; 
             display: flex;
@@ -130,7 +130,7 @@
                         text-transform: uppercase;
                         list-style-type: none;
                         text-align: center;
-                        font-family:Orbitron ;
+                        font-family:$font-Orbitrone ;
                         font-size:13px;
                         justify-content: space-between;
                         max-width: 100%;
