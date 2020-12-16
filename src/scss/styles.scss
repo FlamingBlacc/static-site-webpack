@@ -6,8 +6,11 @@
 @import 'includes/base/global';
 
 // Blocks
+@import 'includes/blocks/services.scss';
 @import 'includes/blocks/portfolio.scss';
 @import 'includes/blocks/video.scss';
+@import 'includes/blocks/gallery.scss';
+@import 'includes/blocks/team.scss';
 
 // Vendor
 //@import 'includes/vendor/**/*';
