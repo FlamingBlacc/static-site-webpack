@@ -1,1 +1,19 @@
-.footer {}
+.footer {
+    font-family:$font-Orbitrone;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+        .footer-rights{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            font-size:18px;
+        }
+        .footer-social{
+            a{
+                margin-right: 25px;
+                margin-left: 25px;
+            }
+        }
+}

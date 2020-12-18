@@ -1,0 +1,40 @@
+.technologies{
+    text-align: center;
+    font-family: $font-Orbitrone;
+    
+     h2{
+         font-size: 40px;
+         text-transform: uppercase;
+     }
+     & a{
+         color:$color-black;
+     }
+     .runing-row{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-evenly;
+        
+        &:hover .technologies-item{
+                    animation-play-state:paused;
+                }
+
+         .technologies-item{
+            max-width: 182px;
+            
+                & img {
+                    height:158px;
+                    object-fit: contain;
+                    
+                    }
+                p{
+                    font-size: 25px;
+                    text-align: center;
+                    
+                }
+                
+         }
+
+        }
+    
+}

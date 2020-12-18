@@ -145,6 +145,10 @@
                         font-size:16px;
                     }
 
+
+                    
+                   
+
                     li{
                         background-color:$color-orange;
                         width: 100vw;
@@ -157,6 +161,34 @@
                           @include tablet{
                             background-color:transparent;
                           }  
+                        }
+                        .about-dropdown{
+                            position: relative; 
+                            
+                        
+                        .about-dropdown-list {
+                        display: none;
+                        position: absolute;   
+                       
+
+                            li{
+                                background-color:$color-gray;
+                                color:$color-black;
+                                z-index: 1;
+                                font-size: 14px;
+                                max-width: 100px;
+                                animation-delay:1s;
+                            }
+                            }
+                            &:hover .about-dropdown-list{
+                                width: 100px;
+                                line-height: 20px;
+                                display: block;
+                                background-color:$color-gray;
+                                top:101px;
+                                right: 20px;
+                             
+                            }
                         }
                     }
 
@@ -179,6 +211,7 @@
                         &:hover{
                            color:$color-orange;
                         }
+
                     }
 
                     .minilogo{
@@ -278,9 +311,9 @@
             font-size: 14px;
         }
         @include desktop{
-            line-height: 60px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            line-height: 100px;
+            padding-top: 0;
+            padding-bottom: 0;
             padding-left: 10px;
             padding-right: 10px;
         }
@@ -295,13 +328,13 @@
             }
                     .dropdown__list{
                         display: none;
-                        background-color:$color-white;
+                        background-color:$color-gray;
+                        width: 150px;
                         position: absolute;
-                        border-radius:10px;
                         z-index: 1;
                         top:32px;
                         right: 0;
-                        line-height: 10px;
+                        line-height: 20px;
                         list-style-type: none;
 
                         @include tablet{
@@ -310,7 +343,7 @@
 
                         @include desktop{
                             line-height: 15px;
-                            top:92px;
+                            top:101px;
                         }
 
 
@@ -319,8 +352,8 @@
                             padding-right: 15x;
                             padding-top: 15x;
                             padding-bottom: 15x;
+                            line-height: 20px;
                             position: relative;
-                            width: 50px;
                             text-align: right;
 
                             &:hover{
