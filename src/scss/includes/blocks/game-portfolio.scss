@@ -1,0 +1,80 @@
+.game-portfolio{
+    padding-top: 158px;
+    padding-bottom: 70px;
+    font-family: $font-Orbitrone;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2{
+        font-size: 48px;
+        color: orange;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        letter-spacing: 0.06em;
+    }
+    & img{
+        padding-bottom: 28px;
+    }
+    .text-info{
+    max-width: 1200px;
+    margin-right: 100px;
+    margin-left:100px;
+        text-align: left;
+        line-height: 22px;
+        margin-top: 20px;
+        letter-spacing: 0.06em;
+        font-size: 14px;
+    }
+    .img-wrapper{
+       position: relative;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        padding-top: 19px;
+        
+
+    .img-wrapper__arrows{
+        position: absolute;
+    }
+
+     .img-wrapper__arrow-left{
+         left: 124px;
+
+     }
+     .img-wrapper__arrow-right{
+        right: 124px;
+
+    }
+
+        }
+    .game-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 51%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 0.06em;
+
+        .wrap{
+            display: flex;
+            flex-direction: row;
+
+            p{
+                font-size: 14px;
+            }
+            .boldtext{
+                font-weight:bold;
+            }
+
+        }
+    }
+
+}
