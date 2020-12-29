@@ -1,1 +1,26 @@
-.footer {}
+.footer {
+    font-family:$font-Orbitrone;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    max-width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 40px;
+        .footer-rights{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            font-size:18px;
+            p{
+                letter-spacing: 0.06em;
+            }
+        }
+        .footer-social{
+            a{
+                margin-right: 25px;
+                margin-left: 25px;
+            }
+        }
+}
