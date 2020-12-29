@@ -1,0 +1,46 @@
+.technologies{
+    text-align: center;
+    font-family: $font-Orbitrone;
+    padding-top:57px;
+    
+     h2{
+         font-size: 40px;
+         text-transform: uppercase;
+         letter-spacing: 0.06em;
+     }
+     & a{
+         color:$color-black;
+     }
+     marquee{
+
+        padding-top: 70px;
+     .runing-row{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-evenly;
+        
+        &:hover .technologies-item{
+                    animation-play-state:paused;
+                }
+
+         .technologies-item{
+            max-width: 182px;
+            
+                & img {
+                    height:158px;
+                    object-fit: contain;
+                    
+                    }
+                p{
+                    font-size: 25px;
+                    text-align: center;
+                    margin-top: 12px;
+                    
+                }
+                
+         }
+
+        }
+    }
+}
