@@ -1,0 +1,136 @@
+.full-gallery{
+    padding-top: 140px;
+    padding-bottom: 90px;
+    font-family: Orbitron;
+    text-align: center;
+    max-width: 1400px;
+    width: 100%;
+    margin-left:auto ;
+    margin-right: auto;
+
+
+            .gallery-header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 20px;
+                max-width: 69%;
+                width: 100%;
+                margin: 0 auto;
+                letter-spacing: 0.06em;
+                font-size: 26px;
+                
+                a{
+                    color:$color-black;
+                    border-bottom:none;
+                }
+    
+
+            & h2 {
+                border-bottom: 3px solid transparent;
+                text-transform: capitalize;
+                padding-bottom: 8px;
+            }
+            & h2:hover {
+                border-bottom: 3px solid $color-orange;
+                transition:  all .2s;
+            }
+            }
+            .gallery-wrapper {
+
+                display: flex;
+                max-width: 1200px;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 100px;
+                flex-direction: column;
+                padding-top: 14px;
+                
+               
+
+                            & img{
+                                object-fit: contain;
+                                padding-bottom: 10px;
+                            }
+                           .gallery-top-zone{
+                            display: flex;
+                            flex-direction: row;
+                            
+                               
+                            .all-gallery-row-1 {
+                                display: flex;
+                                flex-direction: column;
+                                padding-bottom: 5px;
+                                padding-top: 5px;
+                               
+                            }
+                            .all-gallery-row-2 {
+                                display: flex;
+                                flex-direction: column;
+                                padding-right: 20px;
+                                padding-left: 20px;
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                            }
+                            .all-gallery-row-3 {
+                                display: flex;
+                                flex-direction: column;
+                                padding-bottom: 5px;
+                                padding-top: 5px;
+
+                              
+                            }
+                            }
+                            .gallery-middle-zone {
+                                display: flex;
+                                flex-direction: row;
+                            
+                            .gallery-midle {
+                                display:flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                padding-bottom: 5px;
+                                padding-top: 5px;
+                                
+                                }
+                            }
+                            
+                            .gallery-bottom-zone{
+                                display: flex;
+                                object-fit: contain;
+
+                                & img{
+                                    padding-bottom: 5px;
+                                    padding-right: 10px;
+                                    padding-left: 10px;
+                                    padding-top: 5px;
+                                  
+                                }
+                                .gallery-row-1 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding-bottom: 5px;
+                                    padding-top: 5px;
+                                    
+                                    
+                                }
+                                .gallery-row-2 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding-bottom: 5px;
+                                    padding-top: 5px;
+                                }
+                                .gallery-row-3 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding-bottom: 5px;
+                                    padding-top: 5px;
+                                    
+                                    
+                                }
+
+                            }
+                }
+        }
