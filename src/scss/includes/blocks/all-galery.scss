@@ -1,7 +1,6 @@
 .full-gallery{
     padding-top: 140px;
     padding-bottom: 90px;
-    font-family: Orbitron;
     text-align: center;
     max-width: 1400px;
     width: 100%;
@@ -33,7 +32,7 @@
                 padding-bottom: 8px;
             }
             & h2:hover {
-                border-bottom: 3px solid $color-orange;
+                border-bottom: 9px solid $color-orange;
                 transition:  all .2s;
             }
             }
@@ -46,23 +45,21 @@
                 margin-bottom: 100px;
                 flex-direction: column;
                 padding-top: 14px;
+                display: flex;
+                flex-direction: row;
                 
                
 
                             & img{
-                                object-fit: contain;
+                                object-fit: cover;
                                 padding-bottom: 10px;
                             }
-                           .gallery-top-zone{
-                            display: flex;
-                            flex-direction: row;
-                            
-                               
                             .all-gallery-row-1 {
                                 display: flex;
                                 flex-direction: column;
                                 padding-bottom: 5px;
                                 padding-top: 5px;
+                                width:33.33%;
                                
                             }
                             .all-gallery-row-2 {
@@ -72,65 +69,21 @@
                                 padding-left: 20px;
                                 padding-top: 5px;
                                 padding-bottom: 5px;
+                                width:33.33%;
                             }
                             .all-gallery-row-3 {
                                 display: flex;
                                 flex-direction: column;
                                 padding-bottom: 5px;
                                 padding-top: 5px;
+                                width:33.33%;
 
                               
                             }
-                            }
-                            .gallery-middle-zone {
-                                display: flex;
-                                flex-direction: row;
-                            
-                            .gallery-midle {
-                                display:flex;
-                                flex-direction: row;
-                                flex-wrap: wrap;
-                                justify-content: space-between;
-                                padding-bottom: 5px;
-                                padding-top: 5px;
+                           
+                                    
                                 
-                                }
-                            }
+
                             
-                            .gallery-bottom-zone{
-                                display: flex;
-                                object-fit: contain;
-
-                                & img{
-                                    padding-bottom: 5px;
-                                    padding-right: 10px;
-                                    padding-left: 10px;
-                                    padding-top: 5px;
-                                  
-                                }
-                                .gallery-row-1 {
-                                    display: flex;
-                                    flex-direction: column;
-                                    padding-bottom: 5px;
-                                    padding-top: 5px;
-                                    
-                                    
-                                }
-                                .gallery-row-2 {
-                                    display: flex;
-                                    flex-direction: column;
-                                    padding-bottom: 5px;
-                                    padding-top: 5px;
-                                }
-                                .gallery-row-3 {
-                                    display: flex;
-                                    flex-direction: column;
-                                    padding-bottom: 5px;
-                                    padding-top: 5px;
-                                    
-                                    
-                                }
-
-                            }
                 }
         }

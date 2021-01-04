@@ -1,17 +1,26 @@
 .team {
-    font-family: $font-Orbitrone;
-    max-width: 1400px;
-    width: 100%;
+
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 101px;
-    background-color:$color-gray;
+    background-color:$color-light-gray;
 
+
+        .icon{
+            width:40px;
+            height: 40px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        #instagram{
+            fill: orange;
+        }
+        .team-arrows:hover{
+            cursor: pointer;
+        }
         & h2{
             padding-top: 83px;
             padding-bottom: 94px;
-            font-size: 40px;
-            text-transform: uppercase;
             text-align: center;
             margin-top: 0;
             margin-bottom: 0;
@@ -22,7 +31,9 @@
             margin-left:auto;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center;    
+            max-width: 1400px;
+            width: 100%;
 
                 h3 {
                     font-size: 36px;
@@ -84,13 +95,13 @@
                                                 
                                                 }
                                                 
-                                                p,
+                                                span,
                                                 .specialist-number {
                                                     margin-top: 0px;
                                                     margin-bottom: 0px;
                                                 
                                                 }
-                                                p {
+                                                span {
                                                     font-size: 20px;
                                                     letter-spacing: 0.06em;
                                                     margin-top: 9px;
@@ -101,12 +112,17 @@
                             display: flex;
                             justify-content: center;
                             margin-top: 37px;
+
+
                                 a{
                                     line-height: 40px;
+                                    display: flex;
+                                    align-items:center;
                                 }
                                 img{
                                     margin-left:25px;
                                     margin-right: 25px;
+                                    object-fit: cover;
                                 }
                         }
 

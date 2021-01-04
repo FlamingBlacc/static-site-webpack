@@ -1,13 +1,9 @@
 .allservices{
-    font-family: $font-Orbitrone;
     max-width: 1400px;
     margin-left:auto ;
     margin-right:auto ;
 
             & h2{
-                letter-spacing: 0.06em;
-                font-size: 40px;
-                text-transform: uppercase;
                 text-align: center;
                 margin:90px 0px;
             }
@@ -26,7 +22,7 @@
                 width:200px;
                 height: 200px;
                 border-radius:50%;
-                background-color:$color-orange;
+                background-color:$color-light-orange;
                 position: relative;
                 margin: 0 auto;
             }
@@ -44,6 +40,7 @@
         }
         & p{
             font-size: 18px;
+            color:$color-dark-gray;
         }
             }
 }

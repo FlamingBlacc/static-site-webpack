@@ -1,7 +1,6 @@
 .game-portfolio{
     padding-top: 158px;
     padding-bottom: 70px;
-    font-family: $font-Orbitrone;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -12,7 +11,6 @@
     h2{
         font-size: 48px;
         color: orange;
-        text-transform: uppercase;
         text-align: center;
         margin-top: 0;
         margin-bottom: 0;
@@ -41,6 +39,7 @@
 
     .img-wrapper__arrows{
         position: absolute;
+        cursor: pointer;
     }
 
      .img-wrapper__arrow-left{
@@ -67,7 +66,7 @@
             display: flex;
             flex-direction: row;
 
-            p{
+            span{
                 font-size: 14px;
             }
             .boldtext{

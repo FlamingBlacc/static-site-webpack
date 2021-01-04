@@ -4,8 +4,7 @@
     padding-top: 23px;
     padding-bottom: 20px;
     align-items:center;
-    font-family: $font-Orbitrone;
-    background-color:$color-white;
+    background-color:$color-light-gray;
 
         @include tablet{
             padding-top: 30px;
@@ -26,6 +25,7 @@
                 font-size: 26px;
                 border-bottom: solid;
                 margin-top: 0;
+                border-bottom:1px solid $color-orange;
             }
         }
 
@@ -56,7 +56,6 @@
             }
 
             & h2{
-                text-transform: uppercase;
                 letter-spacing: 0.06em;
                 font-size: 20px;
                 margin-bottom:30px;
@@ -90,9 +89,7 @@
                 }
 
                 & .game{
-                    font-family: $font-Orbitrone;
                    
-                  
                     margin-bottom: 12px;
                     letter-spacing: 0.06em;
 
@@ -106,6 +103,7 @@
                         width: 234px;
                         height: 234px;
                         border-radius: 50%;
+                        object-fit: cover;
                         @include mobile {
                             width: 234px;
                             height: 234px;

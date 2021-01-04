@@ -1,19 +1,18 @@
 .technologies{
     text-align: center;
-    font-family: $font-Orbitrone;
     padding-top:57px;
+    background-color:$color-light-gray;
     
      h2{
-         font-size: 40px;
-         text-transform: uppercase;
          letter-spacing: 0.06em;
      }
      & a{
          color:$color-black;
      }
      marquee{
-
         padding-top: 70px;
+
+
      .runing-row{
         display: flex;
         flex-direction: row;
@@ -26,9 +25,12 @@
 
          .technologies-item{
             max-width: 182px;
+       
+            
+
             
                 & img {
-                    height:158px;
+                    min-height:182px;
                     object-fit: contain;
                     
                     }

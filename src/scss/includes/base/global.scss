@@ -16,6 +16,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	font-family: $font-Orbitrone;
 }
 
 input[type="submit"]:focus {
@@ -89,4 +90,19 @@ a {
 
 button, input, label, select {
 	cursor: auto;
+}
+h2{
+	letter-spacing: 0.06em;
+    font-size: 40px;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: normal;
+}
+p{
+	font-style: normal;
+	font-weight: normal;
+}
+h3{
+	font-style: normal;
+	font-weight: normal;
 }
