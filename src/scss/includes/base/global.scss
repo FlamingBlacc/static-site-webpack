@@ -81,7 +81,7 @@ img {
 
 a {
 	text-decoration: none;
-	cursor: pointer;
+    color: $color-black;
 	
 	&:not([href]){
 		cursor: initial;
@@ -99,6 +99,8 @@ h2{
 	font-weight: normal;
 }
 p{
+	font-size: 18px;
+	color:$color-dark-gray;
 	font-style: normal;
 	font-weight: normal;
 }
