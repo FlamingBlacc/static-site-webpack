@@ -1,11 +1,9 @@
 .conteiner__video{
     display: flex;
-    z-index: -1;
     padding-bottom: 100%;
     position: relative;   
 
         @include tablet{
-            z-index: -1;
             width:100%;
             position: relative;
             padding-bottom: 0;
@@ -21,6 +19,10 @@
             @include tablet{
                 width: 100%;
                 position: unset;
+            }
+
+            &:hover{
+                cursor: pointer;
             }
         }
 }

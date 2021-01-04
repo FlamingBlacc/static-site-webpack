@@ -8,10 +8,7 @@
     margin-right: auto;
     line-height: 60px;
 
-        .icon{
-            width:40px;
-            height: 40px;
-        }
+        
         .capa1{
             width:14px;
             height: 14px;
@@ -32,6 +29,11 @@
                 margin-left: 25px;
                 display: flex;
                 align-items:center;
+                .social{
+                    
+                     width:40px;
+                    height: 40px;
+                }
             }
         }
 }
