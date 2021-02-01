@@ -1,35 +1,34 @@
 // Fonts
+$url-font:'../fonts/';
+
 @font-face {
 	font-family: 'Orbitron';
-	src: url('../src/fonts/Orbitron/Orbitron-Light.eot?') format("embedded-opentype"), 
-		url('../src/fonts/Orbitron/Orbitron-Light.woff') format("woff"),
-		url('../src/fonts/Orbitron/Orbitron-Light.woff2') format("woff2");
+	src: url('#{$url-font}Orbitron/Orbitron-Light.eot') format("embedded-opentype"), 
+		url('#{$url-font}Orbitron/Orbitron-Light.woff') format("woff"),
+		url('#{$url-font}Orbitron/Orbitron-Light.woff2') format("woff2");
 
 	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
-  
 }
 
 @font-face {
 	font-family: 'Orbitron';
 	src:
-		url('../src/fonts/Orbitron/Orbitron-Medium.eot?') format("embedded-opentype"), 
-		url('../src/fonts/Orbitron/Orbitron-Medium.woff') format("woff"),
-		url('../src/fonts/Orbitron/Orbitron-Medium.woff2') format("woff2");
+		url('#{$url-font}Orbitron/Orbitron-Medium.eot') format("embedded-opentype"), 
+		url('#{$url-font}Orbitron/Orbitron-Medium.woff') format("woff"),
+		url('#{$url-font}Orbitron/Orbitron-Medium.woff2') format("woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;
- 
 }
 
 @font-face {
 	font-family: 'Orbitron';
-	src: url('../src/fonts/Orbitron/Orbitron-Bold.eot?') format("embedded-opentype"), 
-		url('../src/fonts/Orbitron/Orbitron-Bold.woff') format("woff"),
-		url('../src/fonts/Orbitron/Orbitron-Bold.woff2') format("woff2");
+	src: url('#{$url-font}Orbitron/Orbitron-Bold.eot') format("embedded-opentype"), 
+		url('#{$url-font}Orbitron/Orbitron-Bold.woff') format("woff"),
+		url('#{$url-font}Orbitron/Orbitron-Bold.woff2') format("woff2");
 	font-weight: 600;
 	font-style: normal;
 	font-stretch: normal;
-   
 }
