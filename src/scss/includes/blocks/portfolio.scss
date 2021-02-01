@@ -4,14 +4,14 @@
     padding-top: 23px;
     padding-bottom: 20px;
     align-items:center;
-    background-color:$color-light-gray;
+    background-color:$color-lightGray;
 
         @include tablet{
             padding-top: 30px;
-            padding-bottom: 96px;
+            padding-bottom: 62px;
         }
         @include desktop-extra{
-            padding-top: 133px;
+            padding-top: 72px;
             letter-spacing: 0.06em;
         }
 
@@ -23,7 +23,6 @@
             @include desktop-extra{
                 line-height: 31px;
                 font-size: 26px;
-                border-bottom: solid;
                 margin-top: 0;
                 border-bottom:1px solid $color-orange;
             }
@@ -47,9 +46,9 @@
                 }
 
                 @include desktop-extra{
-                    margin-top: 0;
+                    margin-top: -1px;
                         font-size: 24px;
-                        line-height: 63px;
+                        line-height: 60px;
                 }
 
                     
@@ -82,8 +81,8 @@
                 @include desktop-extra{
                     width: 100%;
                 justify-content:space-between;
-                padding-top: 69px;
-                padding-bottom:34px;
+                padding-top: 71px;
+                padding-bottom:37px;
                 margin-right: 0;
                 margin-left: 0;
                 }

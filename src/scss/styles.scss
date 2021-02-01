@@ -1,7 +1,7 @@
 // General
 @import 'includes/base/vars';
 @import 'includes/base/mixins';
-//@import 'includes/base/fonts';
+@import 'includes/base/fonts';
 @import 'includes/base/utils';
 @import 'includes/base/global';
 
@@ -10,7 +10,7 @@
 @import 'includes/blocks/portfolio.scss';
 @import 'includes/blocks/video.scss';
 @import 'includes/blocks/gallery.scss';
-@import 'includes/blocks//technologies.scss';
+@import 'includes/blocks/technologies.scss';
 @import 'includes/blocks/team.scss';
 @import 'includes/blocks/about.scss';
 @import 'includes/blocks/map.scss';

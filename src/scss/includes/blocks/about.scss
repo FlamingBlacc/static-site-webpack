@@ -1,9 +1,9 @@
 .about{
-        padding-bottom: 90px;
+        padding-bottom: 89px;
         padding-top: 61px;
         h2{
-            margin-top: 90px;
-            margin-bottom: 94px;
+            margin-top: 25px;
+            margin-bottom: 31px;
             text-align: center;
             
             letter-spacing: 0.06em;
@@ -11,26 +11,31 @@
         .about__timeline {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-between;
             max-width: 1200px;
             margin-right: auto;
             margin-left: auto;
+            padding-top: 65px;
+            
+            
 
                     .timeline-items {
                         display: flex;
                         flex-direction: column;
                         text-align: center;
-                        max-width: 12%;
+                        max-width: 13%;
+                        
 
                         .timeline-year{
                             font-size: 20px;
-                            margin-top: 28px;
+                            margin-top: 26px;
                             margin-bottom: 0;
                         }
                         span{
                             margin-top: 13px;
                             margin-bottom: 0px;
                             font-size: 10px;
+                            letter-spacing: 0.06em;
                         }
                         .timeline-point{
                             border-radius: 50%;
@@ -41,17 +46,60 @@
                             justify-content: center;
                             align-items:center;
                             margin-right:auto;
-                            margin-left: auto;
+                            margin-left: auto; 
+                            
+                            
+                            
                         }
-                        .timeline-point::before,
-                        .timeline-point::after{
+                        .point-midle::before,
+                        .point-midle::after{
                             content:'';
-                            box-sizing:border-box;width:100%;
+                            box-sizing:border-box;
+                            width:100%;
                             height:5px;
                             background:$color-orange; 
                             border:solid $color-orange;
-                            border-width:0 60px 0;
+                            border-width: 0 70px 0;
+
                         }
+                        .point-start::before {
+                            content:'';
+                            box-sizing:border-box;
+                            width:100%;
+                            height:5px;
+                            background:$color-orange; 
+                            border:solid $color-orange;
+                            border-width: 0 20px 0;
+                        }
+                        .point-start::after{
+                            content:'';
+                            box-sizing:border-box;
+                            width:100%;
+                            height:5px;
+                            background:$color-orange; 
+                            border:solid $color-orange;
+                            border-width: 0 60px 0;
+                        }
+                        .point-end::before {
+                            content:'';
+                            box-sizing:border-box;
+                            width:100%;
+                            height:5px;
+                            background:$color-orange; 
+                            border:solid $color-orange;
+                            border-width: 0 60px 0;
+                        }
+                        .point-end::after {
+                            content:'';
+                            box-sizing:border-box;
+                            width:100%;
+                            height:5px;
+                            background:$color-orange; 
+                            border:solid $color-orange;
+                            border-width: 0 20px 0;
+                        }
+                       
+                        
                     }
 
         }

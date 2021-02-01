@@ -1,65 +1,35 @@
 // Fonts
 @font-face {
-	font-family: 'MessinaSans';
-	src:url('../fonts/MessinaSans/MessinaSans-Light.eot?') format("embedded-opentype"),
-	url('../fonts/MessinaSans/MessinaSans-Light.ttf') format("truetype"),
-	url('../fonts/MessinaSans/MessinaSans-Light.woff2') format("woff2"),
-	url('../fonts/MessinaSans/MessinaSans-Light.woff') format("woff");
-	font-weight:300;
-	font-style:normal
+	font-family: 'Orbitron';
+	src: url('../src/fonts/Orbitron/Orbitron-Light.eot?') format("embedded-opentype"), 
+		url('../src/fonts/Orbitron/Orbitron-Light.woff') format("woff"),
+		url('../src/fonts/Orbitron/Orbitron-Light.woff2') format("woff2");
+
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+    unicode-range: U+0020-00FD;
 }
 
 @font-face {
-	font-family: 'MessinaSans';
-	src:url('../fonts/MessinaSans/MessinaSans-Regular.eot?') format("embedded-opentype"),
-	url('../fonts/MessinaSans/MessinaSans-Regular.ttf') format("truetype"),
-	url('../fonts/MessinaSans/MessinaSans-Regular.woff2') format("woff2"),
-	url('../fonts/MessinaSans/MessinaSans-Regular.woff') format("woff");
-	font-weight:400;
-	font-style:normal
+	font-family: 'Orbitron';
+	src:
+		url('../src/fonts/Orbitron/Orbitron-Medium.eot?') format("embedded-opentype"), 
+		url('../src/fonts/Orbitron/Orbitron-Medium.woff') format("woff"),
+		url('../src/fonts/Orbitron/Orbitron-Medium.woff2') format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+    unicode-range: U+0020-00FD;
 }
 
 @font-face {
-	font-family: 'MessinaSans';
-	src:url('../fonts/MessinaSans/MessinaSans-SemiBold.eot?') format("embedded-opentype"),
-	url('../fonts/MessinaSans/MessinaSans-SemiBold.ttf') format("truetype"),
-	url('../fonts/MessinaSans/MessinaSans-SemiBold.woff2') format("woff2"),
-	url('../fonts/MessinaSans/MessinaSans-SemiBold.woff') format("woff");
-	font-weight:600;
-	font-style:normal
-}
-
-@font-face {
-	font-family: 'MessinaSans';
-	src:url('../fonts/MessinaSans/MessinaSans-Bold.eot'),
-	url('../fonts/MessinaSans/MessinaSans-Bold.ttf') format("truetype"),
-	url('../fonts/MessinaSans/MessinaSans-Bold.woff2') format("woff2"),
-	url('../fonts/MessinaSans/MessinaSans-Bold.woff') format("woff");
-	font-weight:700;
-	font-style:normal
-}
-@font-face{
 	font-family: 'Orbitron';
-	src:url('../src/fonts/Orbitron/Orbitron-Light.eot?'), format("embedded-opentype")
-	url('../src/fonts/Orbitron/Orbitron-Light.woff') format("woff"),
-	url('../src/fonts/Orbitron/Orbitron-Light.woff2') format("woff2");
-	font-weight:300;
-	font-style:normal;
+	src: url('../src/fonts/Orbitron/Orbitron-Bold.eot?') format("embedded-opentype"), 
+		url('../src/fonts/Orbitron/Orbitron-Bold.woff') format("woff"),
+		url('../src/fonts/Orbitron/Orbitron-Bold.woff2') format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+    unicode-range: U+0020-00FD;
 }
-@font-face{
-	font-family: 'Orbitron';
-	src:url('../src/fonts/Orbitron/Orbitron-Medium.eot?'), format("embedded-opentype")
-	url('../src/fonts/Orbitron/Orbitron-Medium.woff') format("woff"),
-	url('../src/fonts/Orbitron/Orbitron-Medium.woff2') format("woff2");
-	font-weight:400;
-	font-style:normal;
-}
-@font-face{
-	font-family: 'Orbitron';
-	src:url('../src/fonts/Orbitron/Orbitron-Bold.eot?'), format("embedded-opentype")
-	url('../src/fonts/Orbitron/Orbitron-Bold.woff') format("woff"),
-	url('../src/fonts/Orbitron/Orbitron-Bold.woff2') format("woff2");
-	font-weight:600;
-	font-style:normal;
-}
-

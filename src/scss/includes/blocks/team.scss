@@ -3,23 +3,23 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 101px;
-    background-color:$color-light-gray;
+    background-color:$color-lightGray;
 
 
         .icon{
             width:40px;
             height: 40px;
-            margin-right: 20px;
-            margin-left: 20px;
-            fill:$color-light-orange;
+            margin-right: 22px;
+            margin-left: 28px;
+            fill:$color-lightOrange;
         }
         
         .team-arrows:hover{
             cursor: pointer;
         }
         & h2{
-            padding-top: 83px;
-            padding-bottom: 94px;
+            padding-top: 85px;
+            padding-bottom: 95px;
             text-align: center;
             margin-top: 0;
             margin-bottom: 0;
@@ -56,7 +56,7 @@
                         display: flex;
                         flex-direction: column;
                         text-align: center;
-                        margin-right: 59px;
+                        margin-right: 51px;
                         & img {
                         background-color:$color-orange;
                         width: 441px;
@@ -66,17 +66,21 @@
                             margin-top: 36px;
                             margin-bottom: 36px;
                             letter-spacing: 0.06em;
+                            margin-left: 4px;
                         }
                         }
                      .slider-right-items {
                         display: flex;
                         flex-direction: column;
-                        margin-right:59px ;
+                        margin-right:66px;
+                        margin-left: 8px;
 
                             & h3{
                                 margin-top: 30px ;
-                                margin-bottom: 40px;
+                                margin-bottom: 42px;
+                                margin-left: 1px;
                                 letter-spacing: 0.06em;
+                                
                             }
                         .specialists{
                             display: flex;
@@ -102,15 +106,15 @@
                                                 }
                                                 span {
                                                     font-size: 20px;
-                                                    letter-spacing: 0.06em;
-                                                    margin-top: 9px;
+                                                    letter-spacing: 0.08em;
+                                                    margin-top: 8px;
                                                 }
                                         }
                             }
                         .slider-social{
                             display: flex;
                             justify-content: center;
-                            margin-top: 37px;
+                            margin-top: 34px;
 
 
                                 a{
@@ -134,6 +138,7 @@
                         text-align: left;
                         font-size: 20px;
                         margin-top: -3px;
+                        letter-spacing: 0.06em;
                     }
                 }
 }

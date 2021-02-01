@@ -6,7 +6,7 @@
     max-width: 86%;
     margin-left: auto;
     margin-right: auto;
-    line-height: 60px;
+    line-height: 82px;
 
         
         .capa1{
@@ -17,21 +17,22 @@
             display: flex;
             flex-direction: row;
             align-items:center;
-            font-size:18px;
-            /*span{
-                letter-spacing: 0.06em;
-            }*/
+            font-size:19px;
+            span{
+                letter-spacing: 0.02em;
+            }
         }
         .footer-social{
             display: flex;
             a{
-                margin-right: 25px;
+                margin-right: 9px;
                 margin-left: 25px;
                 display: flex;
                 align-items:center;
+
                 .social{
-                    
-                     width:40px;
+                    fill:$color-black;
+                    width:40px;
                     height: 40px;
                 }
             }
