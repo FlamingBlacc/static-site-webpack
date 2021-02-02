@@ -31,23 +31,30 @@
 
     }
 
-    
-        .video-logo {
-            position: absolute;
-            z-index: 2;
-            margin-top: 16px;
-        }
 
-        & span {
-            position: absolute;
-            z-index: 2;
-            margin-top: 423px;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            color: #FF6305;
-            font-size: 64px;
-            font-style: normal;
-            font-weight: normal;
+    .video-logo {
+        position: absolute;
+        z-index: 2;
+        margin-top: 16px;
+
+        &:hover {
+            cursor: pointer;
         }
-    
+    }
+
+    & span {
+        position: absolute;
+        z-index: 2;
+        margin-top: 423px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #FF6305;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: normal;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
 }

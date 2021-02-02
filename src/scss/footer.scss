@@ -34,6 +34,10 @@
                     fill:$color-black;
                     width:40px;
                     height: 40px;
+                    transition:all 0.3s;
+                }
+                &:hover .social{
+                    fill:$color-orange;
                 }
             }
         }

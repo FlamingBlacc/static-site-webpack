@@ -1,5 +1,4 @@
 .header {
-
     background-color: $color-white;
     max-width: 100%;
     width: 100%;
@@ -15,6 +14,7 @@
     height: 30px;
     letter-spacing: 0.06em;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
 
     @include tablet {
         line-height: 100px;
@@ -23,11 +23,12 @@
 
     }
 
-    .logo-link:hover{
-        color:$color-black;
+    .logo-link:hover {
+        color: $color-black;
         padding-bottom: 0;
-        padding-top:0;
+        padding-top: 0;
     }
+
     a {
 
 
@@ -70,7 +71,7 @@
             margin-left: 40px;
         }
 
-        img {
+        .logo-img {
             width: 21px;
             height: 17px;
             margin-right: 4px;
@@ -124,6 +125,15 @@
             max-width: 53%;
             margin-right: 40px;
         }
+    }
+
+    .arrow {
+        content: '';
+        top: 48px;
+        margin-left: 4px;
+        position: absolute;
+        border: 4px solid transparent;
+        border-top: 7px solid $color-black;
     }
 
     .header__navbar {
@@ -186,19 +196,20 @@
 
 
                 .about-dropdown-list::before {
-                    content: ''; 
-                    position: absolute; 
-                    right:  20px;
-                    top: -10px; 
-                    border: 10px solid transparent; 
-                    border-bottom: 10px solid $color-gray; 
-                   }
+                    content: '';
+                    position: absolute;
+                    right: 20px;
+                    top: -10px;
+                    border: 10px solid transparent;
+                    border-bottom: 10px solid $color-gray;
+                }
+
                 .about-dropdown-list {
                     display: none;
                     position: absolute;
                     box-shadow: 0px 4px 12px -3px rgba(0, 0, 0, 0.25);
-                    padding-top:10px;
-                    color:transparent;
+                    padding-top: 10px;
+                    color: transparent;
 
                     li {
                         background-color: $color-gray;
@@ -214,11 +225,14 @@
                     width: 100px;
                     line-height: 20px;
                     display: block;
-                    top: 100px;
+                    top: $top-height;
                     right: 20px;
 
                 }
+
             }
+
+
         }
 
         a {
@@ -330,14 +344,7 @@
         }
     }
 
-    span::after {
-        content: '';
-        top:47px;
-        right: 4px;
-        position: absolute;
-        border: 4px solid transparent;
-        border-top: 7px solid $color-black;
-       }
+
     .dropdown {
         line-height: 20px;
         padding-left: 8px;
@@ -349,7 +356,7 @@
         display: inline-block;
         margin-left: auto;
         margin-right: 20px;
-        
+
 
 
         @include tablet {
@@ -369,28 +376,31 @@
             margin-left: 17px;
 
         }
-      
 
-           
-        
+
+
+
         &:hover .dropdown__list {
             display: block;
         }
-        a:hover{
+
+        a:hover {
             cursor: pointer;
         }
+
         .dropdown__list::before {
-            content: ''; 
-            position: absolute; 
-            right:  20px;
-            top: -10px; 
-            border: 10px solid transparent; 
-            border-bottom: 10px solid $color-gray; 
-           }
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: -10px;
+            border: 10px solid transparent;
+            border-bottom: 10px solid $color-gray;
+        }
+
         .dropdown__list {
-            padding-top:10px;
+            padding-top: 10px;
             display: none;
-            color:transparent;
+            color: transparent;
             width: 150px;
             position: absolute;
             z-index: 1;
@@ -406,7 +416,7 @@
 
             @include desktop {
                 line-height: 15px;
-                top: 100px;
+                top: $top-height;
             }
 
 
@@ -418,9 +428,50 @@
                 line-height: 27px;
                 position: relative;
                 text-align: center;
-                background-color:$color-gray;
+                background-color: $color-gray;
             }
+
+        }
+    }
+
+}
+
+.new-header {
+
+    line-height: 60px;
+    height: 60px;
+
+
+    .logo {
+        .logo-img {
+
+
+            @include desktop-extra {
+                width: 86px;
+                height: 55px;
+                margin-right: 12px;
+            }
+
+        }
+    }
+
+    .arrow {
+        top: 27px;
+    }
+    .header__navbar li .about-dropdown:hover .about-dropdown-list{
             
+            top: 60px;
+
+        }
+    
+
+    .dropdown {
+        line-height: 60px;
+
+
+        .dropdown__list {
+            top: 60px;
+
         }
     }
 }
