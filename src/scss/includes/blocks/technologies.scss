@@ -3,6 +3,11 @@
     padding-top: 58px;
     background-color: $color-lightGray;
     padding-bottom: 90px;
+    display: none;
+
+    @include desktop-extra{
+        display: block;
+    }
 
     h2 {
         letter-spacing: 0.06em;

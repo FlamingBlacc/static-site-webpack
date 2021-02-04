@@ -14,7 +14,7 @@
     height: 30px;
     letter-spacing: 0.06em;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease;
+    transition:0.5s all  /* ease */;
 
     @include tablet {
         max-height: 100px;
@@ -70,6 +70,7 @@
             margin-left: 40px;
         }
         a {
+            padding-top: 0;
             padding-bottom: 0px;
         }
         .logo-img {
@@ -77,6 +78,10 @@
             height: 17px;
             margin-right: 4px;
 
+            @include tablet{
+                width: 45px;
+                height: 43px;
+            }
             @include desktop {
                 width: 70px;
                 height: 70px;
@@ -91,7 +96,7 @@
 
         h5 {
             @include tablet {
-                font-size: 17px;
+                font-size: 16px;
             }
 
             @include desktop {
@@ -105,6 +110,11 @@
                 margin-top: 0;
             }
         }
+        .logo-link{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+        }
     }
 
     nav {
@@ -115,13 +125,16 @@
 
         @include tablet {
             order: unset;
-            max-width: 63%;
+            max-width: 61%;
             width: 100%;
             letter-spacing: 0;
             margin-right: 18px;
             margin-left: auto;
         }
 
+        @include desktop{
+            max-width: 59%;
+        }
         @include desktop-extra {
             max-width: 53%;
             margin-right: 40px;
@@ -130,12 +143,16 @@
     }
 
     .arrow {
+        
+
+        @include tablet {
+        display: unset;
         content: '';
         top: 48px;
         margin-left: 4px;
         position: absolute;
         border: 4px solid transparent;
-        border-top: 7px solid $color-black;
+        border-top: 7px solid $color-black;}
     }
 
     .header__navbar {
@@ -178,10 +195,14 @@
 
 
         li {
-            background-color: $color-orange;
+            background-color: $color-white;
             width: 100vw;
+            border-bottom:1px solid lightgray;
+                
 
             @include tablet {
+                width:unset;
+                border-bottom:none;
                 background-color: transparent;
                 line-height: 100px;
             }
@@ -221,6 +242,7 @@
                         font-size: 14px;
                         max-width: 100px;
                         animation-delay: 1s;
+                        line-height: 30px;
                     }
                 }
 
@@ -267,7 +289,9 @@
         .minilogo {
             padding-left: 10px;
             font-size: 15px;
-            color: $color-white;
+            color: $color-orange;
+            border-bottom:none;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 
             @include tablet {
                 display: none;
@@ -330,12 +354,12 @@
 
         &:checked~.second {
             transform: rotate(45deg);
-            background-color: $color-white;
+            background-color: $color-orange;
         }
 
         &:checked~.three {
             transform: rotate(-45deg);
-            background-color: $color-white;
+            background-color: $color-orange;
         }
 
         &:checked~.four {
@@ -349,7 +373,7 @@
 
 
     .dropdown {
-        line-height: 20px;
+        line-height: 90px;
         padding-left: 8px;
         padding-right: 8px;
         padding-top: 5px;
@@ -441,7 +465,8 @@
 
 .new-header {
 
-    height: 60px;
+    @include tablet{
+    height: 60px;}
 
 
     .logo {
@@ -457,27 +482,35 @@
         }
     }
     nav{
-        height: 60px;
+        @include tablet{
+        height: 60px;}
     }
     .arrow {
-        top: 27px;
+        @include tablet{
+        top: 27px;}
     }
     .header__navbar li{
-        line-height: 60px;
+        @include tablet{
+        line-height: 60px;}
     }
     .header__navbar li .about-dropdown:hover .about-dropdown-list{
-            
-            top: 60px;
+        @include tablet{
+            top: 60px;}
 
         }
     
 
     .dropdown {
-        line-height: 60px;
-
+        @include tablet{
+        line-height: 50px;
+        }
+        @include desktop{
+            line-height: 60px;
+        }
 
         .dropdown__list {
-            top: 60px;
+            @include tablet{
+            top: 60px;}
 
         }
     }

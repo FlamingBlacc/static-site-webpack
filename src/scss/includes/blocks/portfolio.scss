@@ -5,7 +5,6 @@
     padding-bottom: 20px;
     align-items:center;
     background-color:$color-lightGray;
-
         @include tablet{
             padding-top: 30px;
             padding-bottom: 62px;
@@ -19,12 +18,12 @@
         & a {
             margin-top: 16px;
             color: $color-orange;
-            
+            border-bottom:1px solid $color-orange;
             @include desktop-extra{
                 line-height: 29px;
                 font-size: 26px;
                 margin-top: 0;
-                border-bottom:1px solid $color-orange;
+              
             }
         }
 

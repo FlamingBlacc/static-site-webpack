@@ -1,9 +1,17 @@
 .team {
+            display: none;
 
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 101px;
-    background-color:$color-lightGray;
+
+            @include tablet{
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 101px;
+            background-color:$color-lightGray;
+            }
+
+            @include desktop-extra{
+                display: block;
+            }
 
 
         .icon{

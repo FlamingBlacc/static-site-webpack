@@ -2,43 +2,106 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:center;
-    max-width: 86%;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    line-height: 82px;
+    height: 40px;
+    @include tablet{
+        max-width: 86%;
+        height: 82px;
+    }
+    @include desktop-extra {
+       
+        font-size: 18px;
+    }
 
-        
-        .capa1{
-            width:14px;
+
+
+    .capa1 {
+        width: 7px;
+        height: 7px;
+
+        @include mobile {
+            width:10px;
+            height: 10px;
+        }
+        @include desktop-extra {
+            width: 14px;
             height: 14px;
         }
-        .footer-rights{
-            display: flex;
+    }
+
+    .footer-rights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 9px;
+
+        @include mobile{
+            font-size: 13px;
+        }
+        @include tablet{
+            font-size:15px;
             flex-direction: row;
-            align-items:center;
-            font-size:19px;
-            span{
-                letter-spacing: 0.02em;
+        }
+        @include desktop{
+            font-size:17px;
+        }
+        @include desktop-extra {
+            font-size: 19px;
+        }
+
+        span {
+            width: 100%;
+            letter-spacing: 0.02em;
+            @include tablet{
+                width:unset;
             }
         }
-        .footer-social{
+    }
+
+    .footer-social {
+        display: flex;
+
+        a {
+            margin-left: 10px;
+            margin-right: 9px;
             display: flex;
-            a{
+            align-items: center;
+
+            @include desktop-extra {
                 margin-right: 9px;
                 margin-left: 25px;
-                display: flex;
-                align-items:center;
+            }
 
-                .social{
-                    fill:$color-black;
-                    width:40px;
-                    height: 40px;
-                    transition:all 0.3s;
+            .social {
+
+                width: 23px;
+                height: 23px;
+                fill: $color-black;
+                transition: all 0.3s;
+
+                @include mobile{
+                    width:27px;
+                    height: 27px;
                 }
-                &:hover .social{
-                    fill:$color-orange;
+                @include tablet{
+                    width:30px;
+                    height: 30px;
+                }
+                @include desktop{
+                    width:35px;
+                    height: 35px;
+                }
+                @include desktop-extra {
+                    width: 40px;
+                    height: 40px;
                 }
             }
+
+            &:hover .social {
+                fill: $color-orange;
+            }
         }
+    }
 }

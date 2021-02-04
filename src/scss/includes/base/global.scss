@@ -16,8 +16,11 @@ body {
 	height: 100%;
 	margin: 0;
 	font-family: $font-Orbitrone;
+	
 }
-
+body{
+	overflow-x: hidden;
+}
 input[type="submit"]:focus {
 	outline: none;
 }

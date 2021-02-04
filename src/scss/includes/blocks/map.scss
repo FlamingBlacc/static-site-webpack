@@ -1,95 +1,173 @@
-.map{
+.map {
     margin-right: auto;
     margin-left: auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-        
-
-    .map-location{
-        width:100%;
+    padding-bottom: 100%;
+    @include tablet{
+        padding-bottom: 0px;
     }
-    .location{
+    .map-location {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        @include tablet{
+            position: unset;
+        }
+    }
+
+    .location {
         position: absolute;
         z-index: 1;
-        right: 37%;
-        top:39%;
+        top:30%;
+        right: 19%;
+        width:100px;
+        
+        @include desktop{
+            width:160px;
+            height: 160px;
+            right: 35%;
+            top: 25%;
+        }
 
-        &:hover{
+        @include desktop-extra {
+            right: 37%;
+            top: 39%;
+            width:185px;
+            height: 185px;
+        }
+
+        &:hover {
             cursor: pointer;
         }
-        &:hover ~.location-info{
+
+        &:hover~.location-info {
             display: flex;
         }
     }
-    .location-info{
-        width:456px;
-        display: none;      
+
+    .location-info {
+        display: none;
+        width:180px;
         background: $color-white;
-        padding: 20px;
         position: absolute;
-        color:$color-orange;
-        right: 310px;
-        bottom:260px;
-        z-index:3;
+        color: $color-orange;
+        z-index: 3;
         flex-direction: column;
         text-align: left;
-        box-shadow:0px 4px 12px -3px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 12px -3px rgba(0, 0, 0, 0.25);
+        right: 10px;
+        bottom: 100px;
+
+        @include desktop{
+            width: 456px;
+            bottom:200px;
+        }
+        @include desktop-extra{
+        width: 456px;
+        padding: 20px;
+        right: 310px;
+        bottom: 260px;
+        }
+        
 
 
-
-
-
-
-
-        &:hover{
-            .location .location-info{
+        &:hover {
+            .location .location-info {
                 display: flex;
             }
         }
 
-        .location-logo_text{
-            
-            margin-bottom: 44px;
+        .location-logo_text {
 
-            .location-text{
-                text-align: left;
-                font-size: 36px;
-                text-transform: uppercase;
+            margin-bottom: 17.5px;
+            @include desktop-extra{
+            margin-bottom: 44px;
             }
-           
+
+
+            .location-text {
+                
+                
+                 text-align: left;
+                text-transform: uppercase;
+                font-size: 14px;
+                @include desktop{
+                    font-size: 28px;
+                }
+                @include desktop-extra{
+                font-size: 36px;
+                
+            }}
+
 
 
         }
-        .location-info-item{
+
+        .location-info-item {
             display: flex;
             flex-direction: row;
             justify-content: left;
-            align-items:center;
-            line-height: 35px;
+            align-items: center;
+            line-height: 15px;
 
-            .location-info__icon{
-                width:25px;
-                height: 25px;
-                margin-right: 11px;
+            @include desktop{
+                line-height: 26px;
             }
+
+            @include desktop-extra{
             
+            line-height: 35px;
         }
-        .location-info-item:last-child{
-            color:$color-black;
+
+            .location-info__icon {
+                width: 10px;
+                height: 10px;
+
+                @include desktop{
+                    width:18px;
+                    height: 18px;
+                }
+
+                @include desktop-extra{
+                width: 25px;
+                height: 25px;
+                margin-right: 11px;}
+            }
+            .location-info__text{
+                font-size: 9px;
+                margin-left: 5px;
+
+                @include desktop{
+                font-size: 14px;
+                }
+
+                @include desktop-extra{
+                    font-size: 18px;
+                }
+            }
         }
-       }
-       .location-info::after {
-        content: ''; 
-        position: absolute; 
+
+        .location-info-item:last-child {
+            color: $color-black;
+        }
+    }
+
+    .location-info::after {
+        content: '';
+        position: absolute;
         left: 20px;
-         bottom: -20px; 
-        border: 10px solid transparent; 
-        border-top: 10px solid $color-white; 
-       }
-       
-    
-    
-    
+        bottom: -20px;
+        border: 10px solid transparent;
+        border-top: 10px solid $color-white;
+    }
+
+
+
+
 }

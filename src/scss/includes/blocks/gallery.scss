@@ -6,8 +6,12 @@
     width: 100%;
     margin-left:auto ;
     margin-right: auto;
-    
+    display: none;
 
+
+        @include desktop-extra{
+            display: block;
+        }
 
             .gallery-header{
                 display: flex;
